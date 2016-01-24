@@ -10,15 +10,85 @@
 
 @interface AppDelegate ()
 
+@property (nonatomic, strong, readwrite) MainViewController *mainViewController;
+@property (nonatomic, strong, readwrite) RareSearchViewController *firstPageViewController;
+
 @end
 
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor clearColor];
+    self.window.windowLevel = UIWindowLevelNormal + 1;
+    
+    self.window.rootViewController = self.mainViewController;
+    [self.window makeKeyAndVisible];
+    
+    NSError* configureError;
+    [[GGLContext sharedInstance] configureWithError: &configureError];
+    NSAssert(!configureError, @"Error configuring Google services: %@", configureError);
+    
+    [GIDSignIn sharedInstance].delegate = self;
+    
     return YES;
 }
+
+- (BOOL)application:(UIApplication *)app
+            openURL:(NSURL *)url
+            options:(NSDictionary *)options
+{
+    return [[GIDSignIn sharedInstance] handleURL:url
+                               sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
+                                      annotation:options[UIApplicationOpenURLOptionsAnnotationKey]];
+}
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    NSDictionary *options = @{UIApplicationOpenURLOptionsSourceApplicationKey: sourceApplication,
+                              UIApplicationOpenURLOptionsAnnotationKey: annotation};
+    return [self application:application
+                     openURL:url
+                     options:options];
+}
+
+- (void)signIn:(GIDSignIn *)signIn
+didSignInForUser:(GIDGoogleUser *)user
+     withError:(NSError *)error
+{
+    // Perform any operations on signed in user here.
+    NSString *userId = user.userID;                  // For client-side use only!
+    NSString *idToken = user.authentication.idToken; // Safe to send to the server
+    NSString *name = user.profile.name;
+    NSString *email = user.profile.email;
+    NSString *accessToken = user.authentication.accessToken;
+    
+    [self navigateToSearch];
+}
+
+- (void)signIn:(GIDSignIn *)signIn
+didDisconnectWithUser:(GIDGoogleUser *)user
+     withError:(NSError *)error
+{
+    // Perform any operations when the user disconnects from app here.
+    // ...
+}
+
+- (void) setRootViewControllerAsFirstPage
+{
+    self.window.rootViewController = self.firstPageViewController;
+}
+
+-(void) navigateToSearch
+{
+    [self setRootViewControllerAsFirstPage];
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -40,6 +110,24 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (MainViewController *) mainViewController
+{
+    if (nil == _mainViewController)
+    {
+        _mainViewController = [[MainViewController alloc] init];
+    }
+    return _mainViewController;
+}
+
+- (RareSearchViewController *) firstPageViewController
+{
+    if (nil == _firstPageViewController)
+    {
+        _firstPageViewController = [[RareSearchViewController alloc] init];
+    }
+    return _firstPageViewController;
 }
 
 @end

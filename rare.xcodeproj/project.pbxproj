@@ -15,6 +15,15 @@
 		3242A4421C548A66000D2F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3242A4401C548A66000D2F91 /* LaunchScreen.storyboard */; };
 		3242A44D1C548A67000D2F91 /* rareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3242A44C1C548A67000D2F91 /* rareTests.m */; };
 		3242A4581C548A67000D2F91 /* rareUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3242A4571C548A67000D2F91 /* rareUITests.m */; };
+		3242A4681C5499A3000D2F91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3242A4671C5499A3000D2F91 /* GoogleService-Info.plist */; };
+		3242A46C1C549B29000D2F91 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3242A46B1C549B29000D2F91 /* MainViewController.m */; };
+		3242A4711C549BE0000D2F91 /* UIButton+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3242A4701C549BE0000D2F91 /* UIButton+Additions.m */; };
+		3242A4741C549C3F000D2F91 /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3242A4731C549C3F000D2F91 /* UIColor+Additions.m */; };
+		3242A4771C549C9B000D2F91 /* UIFont+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3242A4761C549C9B000D2F91 /* UIFont+Additions.m */; };
+		3242A47A1C549CEA000D2F91 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3242A4791C549CEA000D2F91 /* UIView+Additions.m */; };
+		3242A4801C54A683000D2F91 /* mainBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3242A47F1C54A683000D2F91 /* mainBackground.jpg */; };
+		32F682951C55640200386A03 /* RareSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F682941C55640200386A03 /* RareSearchViewController.m */; };
+		6B53A2A84E28015BFD5A380B /* libPods-rare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0479C955A179B48648F602F /* libPods-rare.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +60,23 @@
 		3242A4531C548A67000D2F91 /* rareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3242A4571C548A67000D2F91 /* rareUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rareUITests.m; sourceTree = "<group>"; };
 		3242A4591C548A67000D2F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3242A4671C5499A3000D2F91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3242A46A1C549AFB000D2F91 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		3242A46B1C549B29000D2F91 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		3242A46F1C549BAF000D2F91 /* UIButton+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Additions.h"; sourceTree = "<group>"; };
+		3242A4701C549BE0000D2F91 /* UIButton+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Additions.m"; sourceTree = "<group>"; };
+		3242A4721C549C1E000D2F91 /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
+		3242A4731C549C3F000D2F91 /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
+		3242A4751C549C6E000D2F91 /* UIFont+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Additions.h"; sourceTree = "<group>"; };
+		3242A4761C549C9B000D2F91 /* UIFont+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Additions.m"; sourceTree = "<group>"; };
+		3242A4781C549CC3000D2F91 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		3242A4791C549CEA000D2F91 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		3242A47F1C54A683000D2F91 /* mainBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mainBackground.jpg; sourceTree = "<group>"; };
+		32F682931C5563EE00386A03 /* RareSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RareSearchViewController.h; sourceTree = "<group>"; };
+		32F682941C55640200386A03 /* RareSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RareSearchViewController.m; sourceTree = "<group>"; };
+		45695CD40C28AA9C6FD6E929 /* Pods-rare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rare.release.xcconfig"; path = "Pods/Target Support Files/Pods-rare/Pods-rare.release.xcconfig"; sourceTree = "<group>"; };
+		AC97131A4DAE4D5CDEC7E285 /* Pods-rare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rare/Pods-rare.debug.xcconfig"; sourceTree = "<group>"; };
+		B0479C955A179B48648F602F /* libPods-rare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B53A2A84E28015BFD5A380B /* libPods-rare.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +112,8 @@
 				3242A44B1C548A67000D2F91 /* rareTests */,
 				3242A4561C548A67000D2F91 /* rareUITests */,
 				3242A4301C548A66000D2F91 /* Products */,
+				BE589BE0742C3CBA7F75EF19 /* Pods */,
+				50E14B21494DAB6CF02E5FF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +130,10 @@
 		3242A4311C548A66000D2F91 /* rare */ = {
 			isa = PBXGroup;
 			children = (
+				32F682921C5544B700386A03 /* Network */,
+				3242A47B1C54A642000D2F91 /* Resources */,
+				3242A46D1C549B65000D2F91 /* Categories */,
+				3242A4691C549AD9000D2F91 /* View Controllers */,
 				3242A4351C548A66000D2F91 /* AppDelegate.h */,
 				3242A4361C548A66000D2F91 /* AppDelegate.m */,
 				3242A4381C548A66000D2F91 /* ViewController.h */,
@@ -117,6 +150,7 @@
 		3242A4321C548A66000D2F91 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3242A4671C5499A3000D2F91 /* GoogleService-Info.plist */,
 				3242A4331C548A66000D2F91 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -140,6 +174,72 @@
 			path = rareUITests;
 			sourceTree = "<group>";
 		};
+		3242A4691C549AD9000D2F91 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3242A46A1C549AFB000D2F91 /* MainViewController.h */,
+				3242A46B1C549B29000D2F91 /* MainViewController.m */,
+				32F682931C5563EE00386A03 /* RareSearchViewController.h */,
+				32F682941C55640200386A03 /* RareSearchViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3242A46D1C549B65000D2F91 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3242A46F1C549BAF000D2F91 /* UIButton+Additions.h */,
+				3242A4701C549BE0000D2F91 /* UIButton+Additions.m */,
+				3242A4721C549C1E000D2F91 /* UIColor+Additions.h */,
+				3242A4731C549C3F000D2F91 /* UIColor+Additions.m */,
+				3242A4751C549C6E000D2F91 /* UIFont+Additions.h */,
+				3242A4761C549C9B000D2F91 /* UIFont+Additions.m */,
+				3242A4781C549CC3000D2F91 /* UIView+Additions.h */,
+				3242A4791C549CEA000D2F91 /* UIView+Additions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		3242A47B1C54A642000D2F91 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3242A47C1C54A64B000D2F91 /* Background Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3242A47C1C54A64B000D2F91 /* Background Images */ = {
+			isa = PBXGroup;
+			children = (
+				3242A47F1C54A683000D2F91 /* mainBackground.jpg */,
+			);
+			name = "Background Images";
+			sourceTree = "<group>";
+		};
+		32F682921C5544B700386A03 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		50E14B21494DAB6CF02E5FF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0479C955A179B48648F602F /* libPods-rare.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE589BE0742C3CBA7F75EF19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC97131A4DAE4D5CDEC7E285 /* Pods-rare.debug.xcconfig */,
+				45695CD40C28AA9C6FD6E929 /* Pods-rare.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3242A45C1C548A67000D2F91 /* Build configuration list for PBXNativeTarget "rare" */;
 			buildPhases = (
+				6EC33C8E2F18220675A0546B /* Check Pods Manifest.lock */,
 				3242A42B1C548A66000D2F91 /* Sources */,
 				3242A42C1C548A66000D2F91 /* Frameworks */,
 				3242A42D1C548A66000D2F91 /* Resources */,
+				7F877E6A3E24D87A011E403D /* Embed Pods Frameworks */,
+				4C9EFDBA240AC02F400C90AD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,6 +349,8 @@
 				3242A4421C548A66000D2F91 /* LaunchScreen.storyboard in Resources */,
 				3242A43F1C548A66000D2F91 /* Assets.xcassets in Resources */,
 				3242A43D1C548A66000D2F91 /* Main.storyboard in Resources */,
+				3242A4681C5499A3000D2F91 /* GoogleService-Info.plist in Resources */,
+				3242A4801C54A683000D2F91 /* mainBackground.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,14 +370,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C9EFDBA240AC02F400C90AD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rare/Pods-rare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EC33C8E2F18220675A0546B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7F877E6A3E24D87A011E403D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rare/Pods-rare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3242A42B1C548A66000D2F91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3242A47A1C549CEA000D2F91 /* UIView+Additions.m in Sources */,
+				32F682951C55640200386A03 /* RareSearchViewController.m in Sources */,
 				3242A43A1C548A66000D2F91 /* ViewController.m in Sources */,
 				3242A4371C548A66000D2F91 /* AppDelegate.m in Sources */,
+				3242A4771C549C9B000D2F91 /* UIFont+Additions.m in Sources */,
+				3242A4711C549BE0000D2F91 /* UIButton+Additions.m in Sources */,
 				3242A4341C548A66000D2F91 /* main.m in Sources */,
+				3242A46C1C549B29000D2F91 /* MainViewController.m in Sources */,
+				3242A4741C549C3F000D2F91 /* UIColor+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,23 +570,27 @@
 		};
 		3242A45D1C548A67000D2F91 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC97131A4DAE4D5CDEC7E285 /* Pods-rare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = rare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mamaresh.rare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s armv6 armv7";
 			};
 			name = Debug;
 		};
 		3242A45E1C548A67000D2F91 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45695CD40C28AA9C6FD6E929 /* Pods-rare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = rare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mamaresh.rare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s armv6 armv7";
 			};
 			name = Release;
 		};
@@ -498,6 +661,7 @@
 				3242A45E1C548A67000D2F91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3242A45F1C548A67000D2F91 /* Build configuration list for PBXNativeTarget "rareTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +670,7 @@
 				3242A4611C548A67000D2F91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3242A4621C548A67000D2F91 /* Build configuration list for PBXNativeTarget "rareUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +679,7 @@
 				3242A4641C548A67000D2F91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
